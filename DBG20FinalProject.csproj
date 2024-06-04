@@ -1,0 +1,622 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AEC778A2-3469-488A-A0CD-CED3B23463BB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DBG20FinalProject</RootNamespace>
+    <AssemblyName>DBG20FinalProject</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>DBG20FinalProject.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Guna.UI2, Version=2.0.3.2, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.2\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Staff.Designer.cs">
+      <DependentUpon>Add_Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendancere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendancere.Designer.cs">
+      <DependentUpon>Attendancere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence.Designer.cs">
+      <DependentUpon>Attendence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="atttenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="atttenda.Designer.cs">
+      <DependentUpon>atttenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Billge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Billge.Designer.cs">
+      <DependentUpon>Billge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration.cs" />
+    <Compile Include="CrystalReport3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport5.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport5.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystal_Attendance.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crystal_Attendance.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashBoard.Designer.cs">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deleet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deleet.Designer.cs">
+      <DependentUpon>Deleet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Food.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Food.Designer.cs">
+      <DependentUpon>Food.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoodRec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FoodRec.Designer.cs">
+      <DependentUpon>FoodRec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Generate_Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generate_Bill.Designer.cs">
+      <DependentUpon>Generate_Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HostelFinalDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HostelFinalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NewDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewDashboard.Designer.cs">
+      <DependentUpon>NewDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="record.Designer.cs">
+      <DependentUpon>record.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff.Designer.cs">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StdForm.Designer.cs">
+      <DependentUpon>StdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student.Designer.cs">
+      <DependentUpon>Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentDashboard.Designer.cs">
+      <DependentUpon>StudentDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentInfor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentInfor.Designer.cs">
+      <DependentUpon>StudentInfor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentReport.Designer.cs">
+      <DependentUpon>StudentReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="St_AssignRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="St_AssignRooms.Designer.cs">
+      <DependentUpon>St_AssignRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="St_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="St_Login.Designer.cs">
+      <DependentUpon>St_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="S_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="S_Add.Designer.cs">
+      <DependentUpon>S_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="S_Attendence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="S_Attendence.Designer.cs">
+      <DependentUpon>S_Attendence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="S_Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="S_Bill.Designer.cs">
+      <DependentUpon>S_Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="S_Del.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="S_Del.Designer.cs">
+      <DependentUpon>S_Del.cs</DependentUpon>
+    </Compile>
+    <Compile Include="S_Food.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="S_Food.Designer.cs">
+      <DependentUpon>S_Food.cs</DependentUpon>
+    </Compile>
+    <Compile Include="S_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="S_Login.Designer.cs">
+      <DependentUpon>S_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="S_RoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="S_RoomForm.Designer.cs">
+      <DependentUpon>S_RoomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="S_Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="S_Search.Designer.cs">
+      <DependentUpon>S_Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="S_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="S_Update.Designer.cs">
+      <DependentUpon>S_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update.Designer.cs">
+      <DependentUpon>Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View.Designer.cs">
+      <DependentUpon>View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFood.Designer.cs">
+      <DependentUpon>ViewFood.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_Staff.resx">
+      <DependentUpon>Add_Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendancere.resx">
+      <DependentUpon>Attendancere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence.resx">
+      <DependentUpon>Attendence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="atttenda.resx">
+      <DependentUpon>atttenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Billge.resx">
+      <DependentUpon>Billge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport5.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystal_Attendance.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crystal_Attendance.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashBoard.resx">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deleet.resx">
+      <DependentUpon>Deleet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Food.resx">
+      <DependentUpon>Food.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoodRec.resx">
+      <DependentUpon>FoodRec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generate_Bill.resx">
+      <DependentUpon>Generate_Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewDashboard.resx">
+      <DependentUpon>NewDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="record.resx">
+      <DependentUpon>record.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff.resx">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StdForm.resx">
+      <DependentUpon>StdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student.resx">
+      <DependentUpon>Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentDashboard.resx">
+      <DependentUpon>StudentDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentInfor.resx">
+      <DependentUpon>StudentInfor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentReport.resx">
+      <DependentUpon>StudentReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="St_AssignRooms.resx">
+      <DependentUpon>St_AssignRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="St_Login.resx">
+      <DependentUpon>St_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="S_Add.resx">
+      <DependentUpon>S_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="S_Attendence.resx">
+      <DependentUpon>S_Attendence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="S_Bill.resx">
+      <DependentUpon>S_Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="S_Del.resx">
+      <DependentUpon>S_Del.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="S_Food.resx">
+      <DependentUpon>S_Food.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="S_Login.resx">
+      <DependentUpon>S_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="S_RoomForm.resx">
+      <DependentUpon>S_RoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="S_Search.resx">
+      <DependentUpon>S_Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="S_Update.resx">
+      <DependentUpon>S_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update.resx">
+      <DependentUpon>Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View.resx">
+      <DependentUpon>View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewFood.resx">
+      <DependentUpon>ViewFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="HostelFinalDataSet.xsc">
+      <DependentUpon>HostelFinalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HostelFinalDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HostelFinalDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HostelFinalDataSet.xss">
+      <DependentUpon>HostelFinalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aslogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\std.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aslogo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staffs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ben.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ben1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stlogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7488545-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2427577-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocket.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocket1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uni.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meal.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buger.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burger.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bb421a37a7644d6126819bb3a95dac1d292538aa_hq.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %281%292.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
